@@ -8,11 +8,18 @@
 }
 
 .cabecalho{
-    background-color: var(--branco);
-
-
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
-.container{
+
+.logo_costa{
+    width: 44px;
+    height: 44px;
+}
+.containers{
     display: flex;
     align-items: center;
 }
@@ -22,5 +29,30 @@
 
 .lista-menu{
     display: none;
-
+    position: absolute;
+    top: 100%;
+    background-color: aliceblue;
+    width: 60vw;
 }
+
+.container_botao{
+    display: none ;
+}
+
+.container_botao:checked~.lista-menu{
+    display: block;
+}
+
+.lista-menu_titulo{
+    color: aqua;
+}
+
+.lista-menu_item{
+    background: var(--azul degrade);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
